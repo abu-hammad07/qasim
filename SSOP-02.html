@@ -534,7 +534,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="users.html">Users</a></li>
-                        <li class="breadcrumb-item">Add User</li>
+                        <li class="breadcrumb-item"> SSOP-02</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -574,111 +574,184 @@
                     <div class="col-xl-12">
                         <div class="card invoice-container">
                             <div class="card-header">
-                                <h5>Add User</h5>
+                                <h5> OPERATIONAL INSPECTION FORM</h5>
                             </div>
                             <div class="card-body p-0">
                                 <div class="px-4 g-4 mt-0 row justify-content-between">
-                                    <div class="col-xl-6">
-                                        <label for="userName" class="form-label">Name
+
+                                    <div class="col-xl-6 ">
+                                        <label for="userName" class="form-label">Form #
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <input type="text" class="form-control" id="userName" name="userName"
+                                        <input type="text" class="form-control" readonly value="SSOP-02" name=""
                                             placeholder="Muhammad" />
                                     </div>
-                                    <div class="col-xl-6">
-                                        <label for="emailAddress" class="form-label">Email Address
+                                    <div class="col-xl-6 ">
+                                        <label for="userName" class="form-label">Date
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <input type="email" class="form-control" id="emailAddress" name="emailAddress"
-                                            placeholder="5ukpW@example.com" />
+                                        <input type="date" class="form-control" id="userName" name="userName"
+                                            placeholder="Muhammad" />
                                     </div>
+
                                     <div class="col-xl-6">
-                                        <label for="phoneNumber" class="form-label">Phone Number
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                1. No condensation
                                             <span class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
-                                            placeholder="+923012345678" />
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <label for="initials" class="form-label">Initials
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" id="initials" name="initials"
-                                            placeholder="MM" />
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <label for="InvoiceNumber" class="form-label">Position
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <select class="form-control" data-select2-selector="icon">
-                                            <option value="">-- Select Position --</option>
-                                            <option value="Admin" data-icon="feather-user">Admin</option>
-                                            <option value="Plant Mananger" data-icon="feather-users">Plant Mananger</option>
-                                            <option value="Quality Controller" data-icon="feather-users">Quality Controller</option>
-                                            <option value="Supervisor" data-icon="feather-users">Supervisor</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <label for="employeeID" class="form-label">Employee ID (Option)</label>
-                                        <input type="text" class="form-control" id="employeeID" name="employeeID"
-                                            placeholder="0001" />
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <label for="username" class="form-label">Username
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control" id="username" name="username"
-                                            placeholder="muhammad" />
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <label for="userPassword" class="form-label">Password
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="generate-pass">
-                                            <div class="input-group field">
-                                                <input type="password" class="form-control password" id="newPassword" placeholder="Password">
-                                                <div class="input-group-text c-pointer gen-pass" data-bs-toggle="tooltip" title="Generate Password"><i class="feather-hash"></i></div>
-                                                <div class="input-group-text border-start bg-gray-2 c-pointer show-pass" data-bs-toggle="tooltip" title="Show/Hide Password"><i></i></div>
-                                            </div>
-                                            <div class="progress-bar mt-2">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="px-4 pt-4">
-                                    <div class="d-md-flex align-items-center justify-content-between">
-                                        <div class="mb-4 mb-md-0 your-brand">
-                                            <div class="fs-12 text-muted mb-2 form-label">
-                                                Upload your Image
-                                                <span class="text-danger">*</span>
-                                            </div>
-                                            <div
-                                                class="wd-100 ht-100 position-relative overflow-hidden border border-gray-2 rounded">
-                                                <img src="assets/images/avatar/undefined.png"
-                                                    class="upload-pic img-fluid rounded h-100 w-100" alt="" />
-                                                <div
-                                                    class="position-absolute start-50 top-50 end-0 bottom-0 translate-middle h-100 w-100 hstack align-items-center justify-content-center c-pointer upload-button">
-                                                    <i class="feather feather-camera" aria-hidden="true"></i>
-                                                </div>
-                                                <input class="file-upload" type="file" accept="image/*" />
-                                            </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                2. No rodent, roaches, or gnat activity
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
                                         </div>
-                                        <!-- <div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Issue Date:</label>
-                                                <input id="issueDate" class="form-control" placeholder="Issue date...">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Due Date:</label>
-                                                <input id="dueDate" class="form-control" placeholder="Due date...">
-                                            </div>
-                                        </div> -->
                                     </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                3. Handwash station-paper, soap, hot water
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                4. Employee hygiene practices
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                5. Cooler #1 temp (40F)
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                6. Cooler #2 temp (40F)
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                7. Freezer temp (&lt;20F)
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                8. PAA concentration (50-2,000 ppm)
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                9. No rodent droppings, no rodent or pest activities
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                10. Rework chicken process is followed
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class=" custom-checkbox mb-3">
+                                            <label class="form-label"> 
+                                                11. Others
+                                            <span class="text-danger">*</span>
+                                            </label>
+                                            <select class="form-select" data-select2-selector="icon">
+                                                <option value="" selected>Yes OR No</option>
+                                                <option value="" data-icon="feather-check text-success">Yes</option>
+                                                <option value="" data-icon="feather-x text-danger">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+
+                                   
                                 </div>
+
                                 <hr class="border-dashed" />
                                 <div class="row px-4 mt-3 mb-4">
                                     <div class="col-md-12">
