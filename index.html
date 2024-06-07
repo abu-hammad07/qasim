@@ -36,7 +36,11 @@
 			<script src="https:oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 </head>
-
+<style>
+    .box_change, .box_change1, .box_change2, .box_change3 {
+        display: block;
+    }
+</style>
 <body>
     <!--! ================================================================ !-->
     <!--! [Start] Navigation Manu !-->
@@ -540,24 +544,23 @@
                     </ul>
                 </div>
             </div>
+
             <!-- [ page-header ] end -->
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
                     <!-- [Mini Card] start -->
-                    <div class="col-xxl-3 col-md-3 col-6">
-                        <div class="card bg-primary border-primary text-white overflow-hidden" data-bs-toggle="collapse"
-                            data-bs-target="#totalHACCP">
-                            <div class="card-body ">
+                    <div class="col-xxl-3 col-md-3 box_change1 box_change2 box_change3" onclick="toggleVisibility('box_change')">
+                        <div class="card bg-primary border-primary text-white overflow-hidden" data-bs-toggle="collapse" data-bs-target="#totalHACCP">
+                            <div class="card-body">
                                 <i class="feather-folder-minus fs-1"></i>
                                 <h5 class="fs-4 text-reset mt-4 mb-1">8,475</h5>
                                 <div class="fs-12 text-reset fw-normal">Total HACCP</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-3 col-6">
-                        <div class="card bg-success border-success text-white overflow-hidden" data-bs-toggle="collapse"
-                            data-bs-target="#totalSQF">
+                    <div class="col-xxl-3 col-md-3 box_change box_change2 box_change3" onclick="toggleVisibility('box_change1')">
+                        <div class="card bg-success border-success text-white overflow-hidden" data-bs-toggle="collapse" data-bs-target="#totalSQF">
                             <div class="card-body">
                                 <i class="feather-folder-plus fs-1"></i>
                                 <h5 class="fs-4 text-reset mt-4 mb-1">4,586</h5>
@@ -565,19 +568,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-3 col-6">
-                        <div class="card bg-warning border-warning text-white overflow-hidden" data-bs-toggle="collapse"
-                            data-bs-target="#totalVendorActivity">
+                    <div class="col-xxl-3 col-md-3 box_change box_change1 box_change3" onclick="toggleVisibility('box_change2')">
+                        <div class="card bg-warning border-warning text-white overflow-hidden" data-bs-toggle="collapse" data-bs-target="#totalVendorActivity">
                             <div class="card-body">
                                 <i class="feather-folder-minus fs-1"></i>
                                 <h5 class="fs-4 text-reset mt-4 mb-1">2,245</h5>
-                                <div class="fs-12 text-reset fw-normal">Total Vendor Avtivities</div>
+                                <div class="fs-12 text-reset fw-normal">Total Vendor Activities</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-3 col-6">
-                        <div class="card bg-danger border-danger text-white overflow-hidden" data-bs-toggle="collapse"
-                            data-bs-target="#totalUsers">
+                    <div class="col-xxl-3 col-md-3 box_change box_change1 box_change2" onclick="toggleVisibility('box_change3')">
+                        <div class="card bg-danger border-danger text-white overflow-hidden" data-bs-toggle="collapse" data-bs-target="#totalUsers">
                             <div class="card-body">
                                 <i class="feather-users fs-1"></i>
                                 <h5 class="fs-4 text-reset mt-4 mb-1">$26.45K</h5>
@@ -590,7 +591,7 @@
                     <div id="totalHACCP" class="collapse">
                         <div class="row">
                             <!-- [Mini Card] start -->
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="HACCP-01.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -600,7 +601,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="HACCP-02.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -610,7 +611,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="HACCP-03.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -620,7 +621,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="SSOP-01.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -630,7 +631,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="SSOP-02.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -640,7 +641,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-primary  border-soft-primary text-primary overflow-hidden">
                                     <a href="SSOP-03.html" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -658,7 +659,7 @@
                     <div id="totalSQF" class="collapse">
                         <div class="row">
                             <!-- [Mini Card] start -->
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -668,7 +669,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -678,7 +679,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -688,7 +689,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -698,7 +699,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -708,7 +709,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-success border-soft-success text-success overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -728,7 +729,7 @@
                     <div id="totalVendorActivity" class="collapse">
                         <div class="row">
                             <!-- [Mini Card] start -->
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -739,7 +740,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -750,7 +751,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -761,7 +762,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -772,7 +773,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -783,7 +784,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-warning border-soft-warning text-warning overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -804,7 +805,7 @@
                         <div class="row">
                             <!-- [Mini Card] start -->
 
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -814,7 +815,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -824,7 +825,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -834,7 +835,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -844,7 +845,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -854,7 +855,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-md-3 col-6">
+                            <div class="col-xxl-3 col-md-3 ">
                                 <div class="card bg-soft-danger border-soft-danger text-danger overflow-hidden">
                                     <a href="javascript:void(0);" class="text-decoration-none">
                                         <div class="card-body justify-content-center text-center">
@@ -1003,6 +1004,18 @@
     <!--! Footer Script !-->
     <!--! ================================================================ !-->
     <!--! BEGIN: Vendors JS !-->
+    <script>
+     function toggleVisibility(className){
+        var boxChangeElements = document.getElementsByClassName(className);
+            for (var i = 0; i < boxChangeElements.length; i++) {
+                if (boxChangeElements[i].style.display === 'none') {
+                    boxChangeElements[i].style.display = 'block';
+                } else {
+                    boxChangeElements[i].style.display = 'none';
+                }
+            }
+     }
+    </script>
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->
     <script src="assets/vendors/js/dataTables.min.js"></script>
