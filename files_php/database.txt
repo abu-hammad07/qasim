@@ -1,0 +1,141 @@
+---------------ssop_01----------------
+--------------------------------------
+
+CREATE TABLE SSOP_01 (
+    SSOP_01_id INT PRIMARY KEY AUTO_INCREMENT,
+    date DATETIME,
+    no_condensation VARCHAR(3),
+    no_rodent_roaches_gnat VARCHAR(3),
+    handwash_station VARCHAR(3),
+    inedible_room_barrels VARCHAR(3),
+    receiving_area VARCHAR(3),
+    killing_area VARCHAR(3),
+    kill_room_knives VARCHAR(3),
+    kill_room_product_cans VARCHAR(3),
+    picking_area_walls_ceiling_floor VARCHAR(3),
+    picking_area_picker VARCHAR(3),
+    scald_vat VARCHAR(3),
+    evisceration_table VARCHAR(3),
+    evisceration_walls_ceiling_floor VARCHAR(3),
+    giblet_table_utensils VARCHAR(3),
+    chill_tanks VARCHAR(3),
+    scale_shovels VARCHAR(3),
+    ice_machines VARCHAR(3),
+    hand_trucks_dollies VARCHAR(3),
+    packing_area_walls_ceiling VARCHAR(3),
+    packing_scales_tables_utensils VARCHAR(3),
+    coolers_freezer VARCHAR(3),
+    all_contact_surfaces_intact VARCHAR(3),
+    cooler_1_temp VARCHAR(3),
+    cooler_2_temp VARCHAR(3),
+    freezer_temp VARCHAR(3),
+    paa_concentration_wash_station VARCHAR(3),
+    paa_concentration_chiller_dip VARCHAR(3),
+    paa_concentration_sprayer VARCHAR(3),
+    scalding_water_temp VARCHAR(3),
+    no_rodent_droppings VARCHAR(3),
+    others VARCHAR(3),
+    created_by VARCHAR(255),
+    created_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(255),
+    updated_date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+---------------ssop_02----------------
+--------------------------------------
+
+
+CREATE TABLE SSOP_02 (
+    SSOP_02_id INT PRIMARY KEY AUTO_INCREMENT,
+    form_date DATE NOT NULL,
+    no_condensation VARCHAR(3) NOT NULL,
+    no_rodent_activity VARCHAR(3) NOT NULL,
+    handwash_station VARCHAR(3) NOT NULL,
+    employee_hygiene VARCHAR(3) NOT NULL,
+    cooler1_temp VARCHAR(3) NOT NULL,
+    cooler2_temp VARCHAR(3) NOT NULL,
+    freezer_temp VARCHAR(3) NOT NULL,
+    paa_concentration VARCHAR(3) NOT NULL,
+    no_rodent_droppings VARCHAR(3) NOT NULL,
+    rework_chicken_process VARCHAR(3) NOT NULL,
+    others VARCHAR(3) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(255),
+    created_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(255),
+    updated_date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+---------------ssop_03----------------
+--------------------------------------
+
+CREATE TABLE SSOP_03 (
+    SSOP_03_id INT PRIMARY KEY AUTO_INCREMENT,
+    date DATE,
+    ssop_form_number VARCHAR(255),
+    area_number VARCHAR(255),
+    deficiencies TEXT,
+    corrective_actions TEXT,
+    preventive_actions TEXT,
+    time_completed TIME,
+    initial VARCHAR(255),
+    created_by VARCHAR(255),
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(255),
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+---------------Haccp_02----------------
+--------------------------------------
+
+
+CREATE TABLE HACCP_02_ (
+    HACCP_02_id INT PRIMARY KEY AUTO_INCREMENT,
+    date VARCHAR(55),
+    time VARCHAR(55),
+    product_name VARCHAR(255),
+    internal_temp_chicken_40F VARCHAR(255),
+    initials VARCHAR(255),
+    pre_shipper_signature VARCHAR(255),
+    verification_date DATE,
+    verified_initials VARCHAR(255),
+    verified_date DATE,
+    verified_time TIME,
+    verified_method VARCHAR(255),
+    results ENUM('Yes', 'No'),
+    created_by VARCHAR(255),
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(255),
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+---------------Haccp_03----------------
+--------------------------------------
+
+
+CREATE TABLE LoadOutSlip (
+    HACCP_03_id INT PRIMARY KEY AUTO_INCREMENT,
+    load_date VARCHAR(255),
+    catching_crew VARCHAR(255),
+    grower VARCHAR(255),
+    house VARCHAR(255),
+    pen VARCHAR(255),
+    bird_type VARCHAR(255),
+    coops_head INT,
+    total_birds INT,
+    time_of_arrival TIME,
+    sexing VARCHAR(255),
+    driver VARCHAR(255),
+    comments TEXT,
+    created_by VARCHAR(255),
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(255),
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
